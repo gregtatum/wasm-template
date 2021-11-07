@@ -1,0 +1,25 @@
+[tasks.build]
+command = "wasm-pack"
+args = [
+  "build",
+  "--target", "web",
+  "--out-dir", "./public/wasm",
+  "--out-name", "script",
+]
+
+[tasks.build-release]
+command = "wasm-pack"
+args = [
+  "build",
+  "--target", "web",
+  "--out-dir", "./public/wasm",
+  "--out-name", "script",
+  "--release",
+]
+
+[tasks.serve]
+command = "http-server"
+cwd = "public"
+args = [
+  "--gzip",
+]
