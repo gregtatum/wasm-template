@@ -17,6 +17,7 @@ args = [
   "--release",
 ]
 
+# https://www.npmjs.com/package/http-server
 [tasks.serve]
 command = "http-server"
 cwd = "public"
